@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Raleway", sans-serif;
+  --font-color: white;
+  --icon-color: white;
+  --line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* starting of header */
+header {
+  width: 100%;
+  color: orange;
+}
+
+#nav-container {
+  background-color: rgb(83, 32, 83);
+  width: 100%;
+  height: 10vh;
+  padding: 2rem;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  font-size: large;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+nav ul li {
+  width: 100px;
+  display: inline;
+  font-size: small;
+  list-style-type: none;
+  padding: 10px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+.material-icons {
+  font-size: 1.5rem;
+}
+
+.hero-banner {
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1534620783980-fa96320b0ce6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80)
+    no-repeat;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+}
+
+#hero-text {
+  height: 90vh;
+  color: black;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+/* ending of header */
+/* starting of main */
+main {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0 4rem 0;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid purple;
+  border-radius: 3px;
+}
+
+img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.card-content {
+  width: 100%;
+  padding: 10px;
+}
+.card-content p {
+  font-style: italic;
+  font-size: small;
+}
+
+.card-action {
+  text-decoration: none;
+}
+
+#about-me {
+  padding: 1rem 0 0 2rem;
+  background-color: rgb(160, 120, 160);
+}
+
+#about-me img {
+  width: 80%;
+}
+.my-intro {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  align-items: center;
+}
+
+#my-intro {
+  padding-left: 2rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+#skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0 0 1rem;
+}
+
+#skills .card {
+  width: 250px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid orange;
+}
+.progress {
+  display: block;
+  height: 30px;
+  background-color: rgb(189, 127, 12);
+}
+/* ending of main */
+/* starting of footer */
+footer {
+  padding: 2rem;
+  background-color: #333;
+  width: 100%;
+  border-radius: 2px;
+  color: rgb(163, 151, 151);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+}
+
+#form-btn {
+  background-color: slategrey;
+  padding: 0.5rem 0.5rem;
+  border-radius: 2px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.form-label {
+  padding-right: 1.5rem;
+}
+
+.form-input {
+  height: 30px;
+}
+
+.textarea {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.copyrights {
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+#arrow-up {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: slategrey;
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  z-index: 100;
+}
+/*ending of footer*/
+/* mobile responsive*/
+@media screen and (max-width: 576px) {
+  header {
+    background-position: top;
+  }
+
+  #nav-fullscreen {
+    display: none;
+  }
+  #nav-mobile {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    color: var(--font-color);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+  .link-mobile {
+    display: none;
+    background-color: white;
+    position: absolute;
+  }
+  .logo-mobile {
+    display: flex;
+  }
+  .logo-fullscreen {
+    display: none;
+  }
+
+  #hero-text {
+    font-size: 2rem;
+  }
+  #about-me {
+    padding: 1rem 0 0 1rem;
+    background-color: rgb(160, 120, 160);
+  }
+  .my-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
