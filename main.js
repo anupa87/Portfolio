@@ -1,12 +1,12 @@
-const mobileNav = document.querySelector(".nav-mobile");
 const menuButton = document.querySelector("#menu-button");
 const arrowButton = document.querySelector("#arrow-up");
+const navContainer = document.querySelector("nav");
 
 const showMobMenu = () => {
-  if (mobileNav.style.display === "flex") {
-    mobileNav.style.display = "none";
+  if (navContainer.classList.contains("responsive")) {
+    navContainer.classList.remove("responsive");
   } else {
-    mobileNav.style.display = "flex";
+    navContainer.classList.add("responsive");
   }
 };
 
